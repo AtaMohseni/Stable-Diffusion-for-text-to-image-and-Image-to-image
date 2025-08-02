@@ -76,6 +76,7 @@ class UNET_ResidualBlock(nn.Module):
         return merged + self.residual_layer(residue)
 
 class UNET_AttentionBlock(nn.Module):
+    
     def __init__(self, n_head: int, n_embd: int, d_context=768):
         super().__init__()
         channels = n_head * n_embd
@@ -173,6 +174,7 @@ class UNET_AttentionBlock(nn.Module):
         return self.conv_output(x) + residue_long
 
 class Upsample(nn.Module):
+    # increase the size of image
     def __init__(self, channels):
         super().__init__()
         self.conv = nn.Conv2d(channels, channels, kernel_size=3, padding=1)
