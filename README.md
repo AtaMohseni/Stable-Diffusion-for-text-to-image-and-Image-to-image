@@ -9,5 +9,5 @@ to generate image from text, you need to specify cfg_scale, which is a value bet
 the specified condition provided in textual prompt. Please see the stable diffusion architecture below for text to image generation
 
 <p align="center">
-  <img src="images/dog" alt="numbered-states" title="text-to-image" width="300" height="300 " /> 
+  <img src="images/image-to-image.JPG" alt="numbered-states" title="text-to-image" width="2700" height="1200" /> 
 </p>
